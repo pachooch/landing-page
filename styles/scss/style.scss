@@ -176,12 +176,6 @@ html {
                 br {
                     display: none;
                 }
-    
-                .card {
-                    form {
-                        @include flex(column, center, center)
-                    }
-                }
             }
         }
     }
