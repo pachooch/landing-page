@@ -10,9 +10,9 @@ button {
   min-width: 350px;
   max-width: 400px;
   min-height: 350px;
-  background: linear-gradient(-135deg, #ffd000, #ffdf52);
+  background: linear-gradient(-135deg, #ffd000, #ffe15b);
   border-radius: 3px;
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.445);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.383);
   padding: 15px;
 }
 .card h1 {
@@ -134,7 +134,7 @@ html body .card h1 {
 }
 @media only screen and (max-width: 430px) {
   html body #box {
-    background-color: rgba(255, 230, 0, 0.548);
+    background-color: rgba(255, 230, 0, 0.575);
   }
   html body .container #opening-statement br {
     display: none;
