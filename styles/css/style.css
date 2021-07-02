@@ -10,7 +10,7 @@ button {
   min-width: 350px;
   max-width: 400px;
   min-height: 350px;
-  background: linear-gradient(-135deg, #d1b741, #ffdf52);
+  background: linear-gradient(-135deg, #ffd000, #ffdf52);
   border-radius: 3px;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.445);
   padding: 15px;
@@ -29,18 +29,28 @@ html body {
   margin: 0;
   padding: 0;
   font-family: "Gloria Hallelujah", cursive;
-  background-image: url("/assets/images/background-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+html body #background-image {
+  z-index: -2;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 html body #box {
   min-width: 100%;
   min-height: 53%;
-  background-color: rgba(255, 230, 0, 0.486);
+  background-color: rgba(255, 230, 0, 0.698);
   margin: 0;
   padding: 0;
 }
@@ -61,7 +71,7 @@ html body #box2 {
   }
 }
 html body .container {
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -73,15 +83,22 @@ html body .container #extra-space {
 }
 @media only screen and (max-width: 900px) {
   html body .container {
-    padding: 0;
+    position: relative;
+    top: 50%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
   html body .container #extra-space {
     width: 0;
-    height: 50px;
+    height: 25px;
+  }
+  html body .container .card {
+    min-width: 275px;
+    min-height: 275px;
   }
 }
 html body #opening-statement {
@@ -116,12 +133,25 @@ html body .card h1 {
   text-align: center;
 }
 @media only screen and (max-width: 430px) {
-  html body {
-    min-height: fit-content;
+  html body #box {
+    background-color: rgba(255, 230, 0, 0.548);
   }
-  html .card {
-    min-width: 70%;
-    min-height: 70vw;
+  html body .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  html body .container #opening-statement br {
+    display: none;
+  }
+  html body .container #opening-statement h1 {
+    font-size: 50px;
+  }
+  html body .container #opening-statement p {
+    font-size: 25px;
+  }
+  html body .container .card {
+    min-width: 75%;
+    min-height: 75vw;
   }
 }
 
