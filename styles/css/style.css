@@ -1,22 +1,29 @@
 button {
-  background-color: rgba(255, 255, 255, 0.89);
-  padding: 15px;
+  background-color: rgba(255, 115, 0, 0.705);
+  padding: 10px;
   font-size: 20px;
   border-radius: 25px;
   border: 2px solid black;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff7300;
 }
 
 .card {
+  font-family: "Gloria Hallelujah", cursive;
   min-width: 350px;
   max-width: 400px;
   min-height: 350px;
-  background: linear-gradient(-135deg, #ffd000, #ffe15b);
+  background: linear-gradient(-135deg, #ffd82a, #ffe15b);
   border-radius: 3px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.383);
   padding: 15px;
 }
 .card h1 {
   margin: 0;
+  text-align: center;
 }
 
 html {
@@ -31,6 +38,7 @@ html body {
   font-family: "Gloria Hallelujah", cursive;
   display: flex;
   flex-direction: column;
+  justify-content: unset;
   align-items: center;
 }
 html body #background-image {
@@ -48,32 +56,26 @@ html body #background-image {
   background-position: 50%;
 }
 html body #box {
-  min-width: 100%;
+  width: 100%;
   min-height: 53%;
-  background-color: rgba(255, 230, 0, 0.698);
   margin: 0;
   padding: 0;
+  background-color: rgba(255, 230, 0, 0.698);
 }
 html body #box2 {
   z-index: -1;
+  margin: 0;
+  padding: 0;
   width: 100%;
   min-height: 47%;
   background-color: rgba(255, 115, 0, 0.589);
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (max-width: 1044px) {
-  html body #box {
-    min-height: 51%;
-  }
-  html body #box2 {
-    min-height: 49%;
-  }
 }
 html body .container {
   padding: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: unset;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -81,30 +83,11 @@ html body .container {
 html body .container #extra-space {
   width: 100px;
 }
-@media only screen and (max-width: 900px) {
-  html body .container {
-    position: relative;
-    top: 50%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  html body .container #extra-space {
-    width: 0;
-    height: 25px;
-  }
-  html body .container .card {
-    min-width: 275px;
-    min-height: 275px;
-  }
-}
 html body #opening-statement {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: unset;
 }
 html body #opening-statement h1 {
   line-height: 70px;
@@ -121,16 +104,59 @@ html body #opening-statement p {
   line-height: 35px;
 }
 html body .card {
-  font-family: "Gloria Hallelujah", cursive;
-  transform-origin: center;
-  transition: 0.15s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-html body .card:hover {
-  transform: rotate(3deg) translateX(0%);
-  box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);
+html body .card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
 }
-html body .card h1 {
-  text-align: center;
+html body .card form label {
+  margin: 2px;
+}
+html body .card form input {
+  background-color: unset;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+@media only screen and (max-width: 1104px) {
+  html body #box {
+    min-height: 51%;
+  }
+  html body #box2 {
+    min-height: 49%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html body .container {
+    position: relative;
+    top: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  html body .container #extra-space {
+    width: 0%;
+    height: 25px;
+  }
+  html body .container br {
+    display: none;
+  }
+  html body .container .card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 430px) {
   html body #box {

@@ -1,2 +1,48 @@
-$primary-font: Arial, Helvetica, sans-serif;
 $handwriting: 'Gloria Hallelujah', cursive;
+
+@mixin w-0 {
+    width: 0%;
+}
+
+@mixin w-25 {
+    width: 25%;
+}
+
+@mixin w-50 {
+    width: 50%;
+}
+
+@mixin w-75 {
+    width: 75%;
+}
+
+@mixin w-100 {
+    width: 100%;
+}
+
+@mixin h-0 {
+    height: 0%;
+}
+
+@mixin h-25 {
+    height: 25%;
+}
+
+@mixin h-50 {
+    height: 50%;
+}
+
+@mixin h-75 {
+    height: 75%;
+}
+
+@mixin h-100 {
+    height: 100%;
+}
+
+@mixin flex($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
