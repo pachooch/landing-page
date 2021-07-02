@@ -136,10 +136,6 @@ html body .card h1 {
   html body #box {
     background-color: rgba(255, 230, 0, 0.548);
   }
-  html body .container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   html body .container #opening-statement br {
     display: none;
   }
