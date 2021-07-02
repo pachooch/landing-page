@@ -105,10 +105,13 @@ html {
         .card {
 
             @include flex(column, center, center);
+            h1 {
+                line-height: 40px;
+            }
 
             form {
                 @include flex(column, space-evenly, center);
-                @include h-50;
+                height: 45%;
 
                 label {
                     margin: 2px;
