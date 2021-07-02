@@ -1,0 +1,128 @@
+@import 'button';
+@import 'card';
+@import 'config';
+
+html {
+    width: 100%;
+    height: 100%;
+
+    body {
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        font-family: $handwriting;
+    
+        background-image: url("/assets/images/background-image.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #box {
+            min-width: 100%;
+            min-height: 53%;
+            background-color: rgba(255, 230, 0, 0.486);
+            margin: 0;
+            padding: 0;
+        }
+
+        #box2 {
+            z-index: -1;
+            width: 100%;
+            min-height: 47%;
+            background-color: rgba(255, 115, 0, 0.589);
+            margin: 0;
+            padding: 0;
+        }
+
+        @media only screen and ( max-width: 1044px ) {
+            #box {
+                min-height: 51%;
+            }
+
+            #box2 {
+                min-height: 49%;
+            }
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+
+            position: absolute;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            #extra-space {
+                width: 100px;
+            }
+
+        }
+
+        @media only screen and ( max-width: 900px ) {
+            .container {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                #extra-space {
+                    width: 0;
+                    height: 50px;
+                }
+            }
+        }
+
+        #opening-statement {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                line-height: 70px;
+                margin: 0px;
+                font-size: 60px;
+            }
+
+            sup {
+                font-size: 20px;
+            }
+
+            p {
+                margin: 0px;
+                padding: 0;
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+
+        .card {
+
+            font-family: $handwriting;
+
+            transform-origin: center;
+
+            transition: 0.15s ease-in-out;
+
+            &:hover {
+                transform: rotate(3deg) translateX(0%);
+                box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+
+}

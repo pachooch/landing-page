@@ -1,0 +1,15 @@
+.card {
+    min-width: 350px;
+    max-width: 400px;
+    min-height: 350px;
+    background: linear-gradient(-135deg, rgb(209, 183, 65), rgb(255, 223, 82));
+    // background-color: rgb(255, 223, 82);
+    border-radius: 3px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.445);
+    padding: 15px;
+
+    h1 {
+        margin: 0;
+
+    }
+}
