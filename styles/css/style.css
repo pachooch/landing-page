@@ -116,6 +116,9 @@ html body .card h1 {
   text-align: center;
 }
 @media only screen and (max-width: 430px) {
+  html body {
+    min-height: fit-content;
+  }
   html .card {
     min-width: 70%;
     min-height: 70vw;

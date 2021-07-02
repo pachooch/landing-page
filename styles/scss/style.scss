@@ -126,6 +126,9 @@ html {
     }
 
     @media only screen and ( max-width: 430px ) {
+        body {
+            min-height: fit-content;
+        }
         .card {
             min-width: 70%;
             min-height: 70vw;
