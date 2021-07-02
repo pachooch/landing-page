@@ -73,7 +73,6 @@ html body .container #extra-space {
 }
 @media only screen and (max-width: 900px) {
   html body .container {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
