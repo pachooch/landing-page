@@ -6,6 +6,10 @@ html {
     @include w-100;
     @include h-100;
 
+    ::placeholder {
+        color: black;
+    }
+
     body {
 
         @include w-100;
