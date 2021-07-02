@@ -73,6 +73,7 @@ html body .container #extra-space {
 }
 @media only screen and (max-width: 900px) {
   html body .container {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,6 +114,12 @@ html body .card:hover {
 }
 html body .card h1 {
   text-align: center;
+}
+@media only screen and (max-width: 430px) {
+  html .card {
+    min-width: 70%;
+    min-height: 70vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
