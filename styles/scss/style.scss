@@ -77,11 +77,6 @@ html {
             #extra-space {
                 width: 100px;
             }
-
-            // form {
-            //     padding-left: 20px;
-            // }
-
         }
 
         #opening-statement {
@@ -130,15 +125,15 @@ html {
             }
         }
 
-        // .card {
-        //     transform-origin: center;
-        //     transition: 0.15s ease-in-out;
+        .card {
+            transform-origin: center;
+            transition: 0.15s ease-in-out;
 
-        //     &:hover {
-        //         transform: rotate(3deg) translateX(0%);
-        //         box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);;
-        //     }
-        // }
+            &:hover {
+                // transform: rotate(3deg) translateX(0%);
+                box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);;
+            }
+        }
     }
 
     @media only screen and ( max-width: 1104px ) {

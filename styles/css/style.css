@@ -4,11 +4,11 @@ button {
   font-size: 20px;
   border-radius: 25px;
   border: 2px solid black;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 button:hover {
-  background-color: #ff7300;
+  background-color: rgba(255, 115, 0, 0.883);
 }
 
 .card {
@@ -16,7 +16,7 @@ button:hover {
   min-width: 350px;
   max-width: 400px;
   min-height: 350px;
-  background: linear-gradient(-135deg, #ffd82a, #ffe15b);
+  background: linear-gradient(-45deg, #ffd82a, #ffe15b);
   border-radius: 3px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.383);
   padding: 15px;
@@ -130,6 +130,13 @@ html body .card form input {
   border: 1px solid black;
   border-radius: 8px;
   padding: 5px;
+}
+html body .card {
+  transform-origin: center;
+  transition: 0.15s ease-in-out;
+}
+html body .card:hover {
+  box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);
 }
 @media only screen and (max-width: 1104px) {
   html body #box {
