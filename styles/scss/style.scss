@@ -128,7 +128,7 @@ html {
 
         .card {
             transform-origin: center;
-            transition: 0.15s ease-in-out;
+            transition: box-shadow 0.15s ease-in-out;
 
             &:hover {
                 // transform: rotate(3deg) translateX(0%);

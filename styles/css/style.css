@@ -134,7 +134,7 @@ html body .card form input {
 }
 html body .card {
   transform-origin: center;
-  transition: 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
 }
 html body .card:hover {
   box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.445);
