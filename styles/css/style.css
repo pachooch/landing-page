@@ -187,9 +187,6 @@ html body .card:hover {
     min-width: 75%;
     min-height: 75vw;
   }
-  html body .container .card form input {
-    box-shadow: inset -1px 2px 3px rgba(0, 0, 0, 0.383);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
