@@ -205,6 +205,12 @@ html {
                 .card {
                     min-width: 75%;
                     min-height: 75vw;
+
+                    form {
+                        input {
+                            box-shadow: inset -1px 2px 3px rgba(0, 0, 0, 0.383);
+                        }
+                    }
                 }
             }
         }
