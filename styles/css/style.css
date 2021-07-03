@@ -127,6 +127,7 @@ html body .card form label {
 }
 html body .card form input {
   background-color: unset;
+  box-shadow: inset -1px 2px 3px rgba(0, 0, 0, 0.383);
   border: 1px solid black;
   border-radius: 8px;
   padding: 5px;
@@ -163,6 +164,10 @@ html body .card:hover {
   }
   html body .container br {
     display: none;
+  }
+  html body .container .card {
+    min-width: 275px;
+    min-height: 275px;
   }
 }
 @media only screen and (max-width: 430px) {
