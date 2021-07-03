@@ -10,11 +10,6 @@ html {
         color: black;
     }
 
-    ::after{
-        position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-        content:url(/assets/images/background-image.jpg)
-     }
-
     body {
 
         @include w-100;
