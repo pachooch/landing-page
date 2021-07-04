@@ -44,6 +44,9 @@ html body {
   justify-content: unset;
   align-items: center;
 }
+html body #preload {
+  display: none;
+}
 html body #background-image {
   z-index: -2;
   position: fixed;

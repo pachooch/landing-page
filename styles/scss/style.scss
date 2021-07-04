@@ -12,6 +12,10 @@ html {
 
     body {
 
+        #preload {
+            display: none;
+        }
+
         @include w-100;
         @include h-100;
 
